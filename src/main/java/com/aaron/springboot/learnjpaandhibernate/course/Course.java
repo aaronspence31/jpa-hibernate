@@ -1,9 +1,13 @@
 package com.aaron.springboot.learnjpaandhibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
+@Entity
 @Component
 public class Course {
+    @Id
     private long id;
     private String name;
     private String author;
